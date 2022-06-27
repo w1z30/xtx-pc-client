@@ -1,0 +1,627 @@
+/* 网站入口:xtx-entry */
+.xtx-entry {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.xtx-entry .container {
+    height: 500px;
+    position: relative;
+    /* ps */
+    /* background-color: pink; */
+}
+
+.xtx-entry .container .categroy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 251px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.xtx-entry .categroy a {
+    color: #fff;
+}
+
+.xtx-entry .categroy li {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 36px;
+    position: relative;
+}
+
+.xtx-entry .categroy li:hover {
+    background-color: #27ba9b;
+}
+
+.xtx-entry .categroy span {
+    font-size: 14px;
+}
+
+.xtx-entry .categroy span:first-child {
+    margin-left: 15px;
+}
+
+.xtx-entry .categroy a::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 11px;
+    top:19px;
+    right: 19px;
+    /* ps */
+    /* background-color: red; */
+    background: url('../images/sprites.png') -80px -110px;
+}
+
+.xtx-entry .prev {
+    position: absolute;
+    top: 228px;
+    left: 260px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: url('../images/sprites.png') 13px -60px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.xtx-entry .next {
+    position: absolute;
+    top: 228px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: url('../images/sprites.png') -22px -60px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.xtx-entry .indicator {
+    height: 10px;
+    width: 110px;
+    position: absolute;
+    bottom: 31px;
+    left: 680px;
+    /* ps */
+    /* background-color: red; */
+}
+
+.xtx-entry .indicator li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.43);
+    border-radius: 50%;
+}
+
+.xtx-entry .indicator li.active {
+    background-color: #fff;
+}
+
+.xtx-entry .indicator li:last-child {
+    margin-right: 0;
+}
+
+/* 新鲜好物模块:xtx-new-goods */
+.xtx-new-goods,
+.xtx-popularity-recommendation {
+    height: 520px;
+    box-sizing: border-box;
+    /* ps */
+    /* background-color: pink; */
+}
+
+.xtx-new-goods .goods-hd,
+.xtx-popularity-recommendation .recommendation-hd {
+    height: 115px;;
+    line-height: 115px;
+    /* ps */
+    /* background-color: aqua; */
+}
+
+.xtx-new-goods .goods-hd h2,
+.xtx-popularity-recommendation .recommendation-hd h2 {
+    height: 115px;
+    font-size: 29px;
+    font-weight: 400;
+    margin-right: 34px;
+}
+
+.xtx-new-goods .goods-hd h2 span,
+.xtx-popularity-recommendation .recommendation-hd h2 span {
+    font-size: 16px;
+    color: #999;
+}
+
+.xtx-new-goods .goods-hd a {
+    color: #999;
+}
+
+.xtx-new-goods .goods-hd a::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    /* ps */
+    /* background-color: red; */
+    background: url('../images/sprites.png') 0 -110px;
+    vertical-align: middle;
+}
+
+.xtx-new-goods .goods-list,
+.xtx-popularity-recommendation .recommendation-list {
+    height: 405px;
+    /* ps */
+    /* background-color: orange; */
+}
+
+.xtx-new-goods .goods-list li,
+.xtx-popularity-recommendation .recommendation-list li {
+    height: 405px;
+    width: 304px;
+    float: left;
+    margin-right: 8px;
+    line-height: 1;
+    text-align: center;
+    /* ps */
+    background-color: #f0f9f4;
+    position: relative;
+}
+
+.xtx-popularity-recommendation .recommendation-list li {
+    background-color: #fff;
+}
+
+.xtx-new-goods .goods-list li:last-child,
+.xtx-popularity-recommendation .recommendation-list li:last-child {
+    margin-right: 0;
+}
+
+.xtx-new-goods .goods-list li img,
+.xtx-popularity-recommendation .recommendation-list li img {
+    width: 100%;
+}
+
+.xtx-new-goods .goods-list li h3,
+.xtx-popularity-recommendation .recommendation-list li h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 22px;
+    margin-bottom: 19px;
+}
+
+.xtx-new-goods .goods-list li p {
+    color: #9a2e1f;
+    font-size: 23px;
+}
+
+.xtx-new-goods .goods-list li span {
+    font-size: 17px;
+}
+
+.xtx-popularity-recommendation .recommendation-list li span {
+    color: #999;
+}
+
+.xtx-new-goods .goods-list .jingp {
+    width: 28px;
+    height: 51px;
+    border-radius: 3px;
+    border: 2px solid #27ba9b;
+    text-align: center;
+    position: absolute;
+    padding-top: 5px;
+    top: 18px;
+    left: 17px;
+    font-size: 18px;
+    color: #27ba9b;
+    box-sizing: border-box;
+}
+
+/* 热门品牌模块：xtx-popular-brands */
+.xtx-popular-brands {
+    height: 466px;
+    background-color: #f5f5f5;
+    margin-top: 55px;
+}
+
+.xtx-popular-brands .brands-hd {
+    height: 115px;;
+    line-height: 115px;
+    /* ps */
+    /* background-color: orange; */
+}
+
+.xtx-popular-brands .brands-hd h2 {
+    height: 115px;
+    font-size: 29px;
+    font-weight: 400;
+    margin-right: 34px;
+}
+
+.xtx-popular-brands .brands-hd h2 span {
+    font-size: 16px;
+    color: #999;
+}
+
+.xtx-popular-brands .brands-hd a {
+    width: 20px;
+    height: 20px;
+    /* ps */
+    display: inline-block;
+    margin-top: 79px;
+    margin-right: 12px;
+    box-sizing: border-box;
+    background-color: #e2e2e2;
+}
+
+.xtx-popular-brands .brands-hd a:nth-child(2) {
+    margin-right: 0;
+    background-color: #27ba9b;
+   
+}
+
+.xtx-popular-brands .brands-hd a p {
+    width: 7px;
+    height: 13px;
+    display: block;
+    line-height: 13px;
+    margin: 3px 7px 4px 6px;
+    background: url('../images/sprites.png') 0px -74px;
+}
+
+.xtx-popular-brands .brands-hd .last {
+    background-position: -45px -74px;
+}
+
+.xtx-popular-brands .brands-list {
+    height: 244px;
+    /* ps */
+    /* background-color: pink; */
+}
+
+.xtx-popular-brands .brands-list li {
+    height: 351px;
+    width: 244px;
+    float: left;
+    margin-right: 4px;
+}
+
+.xtx-popular-brands .brands-list li:last-child {
+    margin-right: 0;
+}
+
+.xtx-popular-brands .brands-list li img {
+    width: 100%;
+}
+
+/* 生鲜模块：xtx-fresh */
+.xtx-fresh {
+    height: 713px;
+    /* ps */
+    /* background-color: pink; */
+    box-sizing: border-box;
+}
+
+.xtx-fresh .frsh-hd {
+    height: 91px;
+    /* ps */
+    /* background-color: #27ba9b; */
+    /* line-height: 91px; */
+}
+
+.xtx-fresh .frsh-hd h2 {
+    height: 91px;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 91px;
+}
+
+.xtx-fresh .frsh-hd ul {
+    height: 20px;
+    width: 358px;
+    /* ps */
+    /* background-color: orchid; */
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+.xtx-fresh .frsh-hd ul li {
+    width: 51px;
+    height: 20px;
+    float: left;
+    /* border: 1px solid #333; */
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 20px;
+}
+
+.xtx-fresh .frsh-hd .all {
+    color: #999;
+    margin-top: 43px;
+    margin-left: 65px;
+}
+
+.xtx-fresh .frsh-hd .all::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    /* ps */
+    /* background-color: red; */
+    background: url('../images/sprites.png') 0 -110px;
+    vertical-align: middle;
+}
+
+.xtx-fresh .frsh-hd ul li a:hover {
+    color: #fefbfc;
+}
+
+.xtx-fresh .frsh-hd ul li:hover {
+    background-color: #27ba9b;
+}
+
+.xtx-fresh .fresh-list {
+    height: 617px;
+    /* ps */
+    /* background-color: pink; */
+}
+
+.xtx-fresh .list-left {
+    width: 242px;
+    height: 617px;
+    line-height: 617px;
+    /* ps */
+    /* background-color: #27ba9b; */
+}
+
+.xtx-fresh .list-left img {
+    width: 242px;
+    height: 617px;
+}
+
+.xtx-fresh .list-right {
+    height: 617px;
+    width: 998px;
+    /* background-color: #27ba9b; */
+}
+
+.xtx-fresh .list-right ul li {
+    width: 242px;
+    height: 304px;
+    float: left;
+    /* ps */
+    /* background-color: #999; */
+    margin-left: 7px;
+    margin-top: 3px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.xtx-fresh .list-right ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.xtx-fresh .list-right ul li img {
+    width: 184px;
+    height: 184px;
+    margin: 8px 29px 12px 29px;
+}
+
+.xtx-fresh .list-right ul li h3 {
+    margin-left: 29px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.xtx-fresh .list-right ul li p {
+    margin-left: 29px;
+    font-size: 22px;
+    color: #9a2e1f;
+}
+
+.xtx-fresh .list-right ul li p span {
+    font-size: 14px;
+    margin-right: 1px;
+}
+
+.xtx-fresh .list-right .fugai {
+    height: 84px;
+    width: 240px;
+    /* ps */
+    background-color: #27ba9b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    box-sizing: border-box;
+    margin-left: -1px;
+    margin-bottom: -1px;
+}
+
+.xtx-fresh .list-right ul li:hover .fugai {
+    box-sizing: border-box;
+    display: block;
+}
+
+.xtx-fresh .list-right ul li:hover {
+    border: 3px solid #27ba9b;
+    box-sizing: border-box;
+}
+
+.xtx-fresh .list-right .fugai a {
+    width: 125px;
+    height: 27px;
+    display: block;
+    /* background-color: #9a2e1f; */
+    text-align: center;
+    margin-left: 54px;
+    margin-top: 19px;
+    font-size: 18px;
+    color: #fff;
+    box-sizing: border-box;
+    border-bottom: 2px solid #a9dbcc;
+}
+
+.xtx-fresh .list-right .fugai a:last-child {
+    margin-top: 8px;
+    font-size: 13px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* 最新专题模块:xtx-new-title */
+.xtx-new-title {
+    height: 512px;
+    /* px */
+    background-color: #f5f5f5;
+    margin-top: 35px;
+}
+
+.xtx-new-title .container {
+    height: 470px;
+    /* ps */
+    /* background-color: #27ba9b; */
+}
+
+.xtx-new-title .new-title-hd {
+    height: 115px;
+    line-height: 115px;
+    /* ps*/
+    /* background-color: antiquewhite; */
+}
+
+.xtx-new-title .new-title-hd h2 {
+    height: 115px;
+    font-size: 29px;
+    font-weight: 400;
+    margin-right: 34px;
+}
+
+.xtx-new-title .new-title-hd a {
+    color: #999;
+}
+
+.xtx-new-title .new-title-hd a::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    /* ps */
+    /* background-color: red; */
+    background: url('../images/sprites.png') 0 -110px;
+    vertical-align: middle;
+}
+
+.xtx-new-title .new-title-list {
+    height: 356px;
+    /* ps */
+    /* background-color: antiquewhite; */
+    background-color: #fff;
+}
+
+.xtx-new-title .new-title-list li {
+    width: 406px;
+    height: 356px;
+    float: left;
+    margin-right: 10px;
+    /* ps */
+    /* background-color: #27ba9b; */
+    position: relative;
+}
+
+.xtx-new-title .new-title-list li:last-child {
+    margin-right: 0;
+}
+
+.xtx-new-title .new-title-list li img {
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.xtx-new-title .new-title-list li p {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 222px;
+    display: inline-block;
+}
+
+.xtx-new-title .new-title-list li p:nth-child(2) {
+    color: #999;
+    position: absolute;
+    font-size: 16px;
+    top: 255px;
+    left: 15px;
+    display: inline-block;
+}
+
+.xtx-new-title .new-title-list li p:nth-child(4) {
+    width: 81px;
+    height: 27px;
+    display: inline-block;
+    position: absolute;
+    top: 232px;
+    left: 307px;
+    color: #9a2e1f;
+    font-size: 17px;
+    text-align: center;
+    line-height: 27px;
+    /* ps */
+    background-color: #fff;
+}
+
+.xtx-new-title .new-title-list li p:last-child span {
+    font-size: 14px;
+}
+
+.xtx-new-title .new-title-list li h4 {
+    width: 50px;
+	height: 12px;
+	font-size: 14px;
+    margin-left: 34px;
+    /* margin-top: 315px; */
+    display: inline-block;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.xtx-new-title .new-title-list li h4 span {
+    width: 15px;
+	height: 13px;
+    margin-right: 2px;
+    display: inline-block;
+    background: url('../images/sprites.png') -120px -110px;
+    vertical-align: baseline;
+}
+
+.xtx-new-title .new-title-list li h4:nth-child(6) {
+    margin-left: 24px;
+}
+
+.xtx-new-title .new-title-list li h4:nth-child(6) span {
+    width: 16px;
+    height: 12px;
+    background-position: -160px -110px;
+}
+
+.xtx-new-title .new-title-list li h4:nth-child(7) {
+    margin-left: 170px;
+}
+
+.xtx-new-title .new-title-list li h4:nth-child(7) span {
+    width: 16px;
+    height: 16px;
+    background-position: -200px -110px;
+    vertical-align: middle;
+}
+
+.xtx-new-title .new-title-list .red {
+    background-position: -239px -110px;
+}
